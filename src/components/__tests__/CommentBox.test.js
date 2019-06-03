@@ -2,6 +2,7 @@ import React from 'react';
 import { mount } from 'enzyme';
 import '../../setupTests';
 import CommentBox from 'components/CommentBox';
+import Root from 'Root';
 //Arrange
 //Assert
 //Act
@@ -9,7 +10,11 @@ import CommentBox from 'components/CommentBox';
 let wrapped;
 
 beforeEach(() => {
-  wrapped = mount(<CommentBox />);
+  wrapped = mount(
+    <Root>
+      <CommentBox />
+    </Root>
+  );
 });
 
 it('it has a text area and a button', () => {
