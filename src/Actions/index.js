@@ -1,4 +1,4 @@
-import { SAVE_COMMENT } from 'actions/types';
+import { SAVE_COMMENT } from './types';
 
 export function saveComment(comment) {
   return {

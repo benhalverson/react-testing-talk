@@ -12,7 +12,7 @@
  * saveComment: Adds a comment via the 'comments' reducer
  */
 
-import { SAVE_COMMENT } from 'actions/types';
+import { SAVE_COMMENT } from '../actions/types';
 export default function(state = [], action) {
   switch (action.type) {
     case SAVE_COMMENT:

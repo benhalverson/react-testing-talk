@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import * as actions from 'actions';
-import { saveComment } from '../Actions/index';
+import * as actions from '../actions';
 
 class CommentBox extends Component {
   state = { comment: '' };
@@ -16,6 +15,7 @@ class CommentBox extends Component {
     this.props.saveComment(this.state.comment);
     this.setState({ comment: '' });
   };
+
   render() {
     return (
       <form onSubmit={this.handleSubmit}>

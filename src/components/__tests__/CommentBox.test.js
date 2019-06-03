@@ -1,8 +1,8 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import '../../setupTests';
-import CommentBox from 'components/CommentBox';
-import Root from 'Root';
+import CommentBox from '../CommentBox';
+import Root from '../../Root';
 //Arrange
 //Assert
 //Act
